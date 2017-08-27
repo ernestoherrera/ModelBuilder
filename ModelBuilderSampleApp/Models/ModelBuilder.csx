@@ -6,7 +6,7 @@
 #r "Microsoft.SqlServer.Management.Sdk.Sfc"
 #r "System.Data.Entity.Design"
 #r "System.Globalization"
-#r "C:\source\ModelBuilder\ModelBuilder\packages\Dapper.1.50.2\lib\net451\Dapper.dll"
+#r "C:\source\ModelBuilder-TestApp\ModelBuilderSampleApp\bin\Debug\Dapper.dll"
 
 using System;
 using System.IO;
@@ -26,13 +26,13 @@ var serverName = "localhost";
 // The SQL username
 var sqlLogin = "appUser";
 // The SQL password
-var sqlPassword = "passcode";
+var sqlPassword = "3044071035Fluent";
 // The SQL database to generate the POCOs for
 var sqlDatabaseName = "FluentSqlTestDb";
 // The namespace to apply to the generated classes
 var classNamespace = "ModelBuilderSampleApp.Models";
 // The destination folder for the generated classes, relative to this file's location.
-var destinationFolder = @"C:\source\ModelBuilder\ModelBuilder\ModelBuilderSampleApp\Models\";
+var destinationFolder = @"C:\source\ModelBuilder-TestApp\ModelBuilderSampleApp\Models\";
 var fileExtension = ".cs";
 // Name of the one model to be refreshed. If empty string, it will refresh all models
 var mapSingleTable = "";
